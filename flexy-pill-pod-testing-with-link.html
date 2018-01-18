@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html>
+
+
+
+
+	<body style="background-color:#ca99ca;">
+
+
+		<style>
+
+				.e9-flexy-pill-pod {
+					flex-shrink: 1;
+					flex-grow: 1;
+					padding: 0px;
+					min-width: 365px;
+
+					max-width: 365px;
+					background-color: #ffffff;
+					border-width: 1px;
+					border-style: solid;
+					border-color: rgba(0,0,0,.04);
+					border-radius: 15px;
+
+					background-clip: padding-box;
+
+					margin: 5px;
+
+					min-height: 140px;
+
+				}
+
+
+				.e9-flexy-pill-pod.e9-flexy-pill-pod--clickable:hover {
+					background-color: #e2e2e2;
+					border-color: rgba(0,0,0,.08);
+				}
+
+
+				@media (max-width: 769px) {
+
+
+					.e9-flexy-pill-pod {
+						max-width: initial;
+			    			min-width: initial;
+
+					}
+
+				}
+
+
+				/* # Flexy pill-pod heading */
+				.e9-flexy-pill-pod-heading {
+					display: block;
+					border-top-right-radius: 15px;
+					border-top-left-radius: 15px;
+					padding: 15px;
+
+					padding-top: 10px;
+    					padding-bottom: 10px;
+				}
+
+				/* ## By Meaning (Note: This is a part-of type relationship ) */
+				.e9-flexy-pill-pod-heading.e9-flexy-pill-pod-heading--primary {
+					background-color: #0081d2;
+					color: #ffffff;
+				}
+					.e9-flexy-pill-pod-heading.e9-flexy-pill-pod-heading--primary:hover {
+						/*background-color: #0067c1;*/
+					}
+
+
+				/* # Flexy pill-pod body */
+				.e9-flexy-pill-pod-body {
+					display: block;
+					border-bottom-right-radius: 15px;
+					border-bottom-left-radius: 15px;
+					padding: 15px;
+				}
+
+
+
+				.e9-pill-button {
+					background-color: #ededed;
+					border-radius: 500px;
+					color: #009bdf;
+
+					font-family:"Lato-Regular";
+					text-align: center;
+
+
+					padding-top: 1px;
+					padding-bottom: 1px;
+					padding-left: 22px;
+					padding-right: 22px;
+
+					margin-top: 2px;
+
+					text-decoration: none;
+				}
+
+
+				/* # Style modifiers by Color */
+				.e9-pill-button.e9-pill-button--blue {
+					background-color: #0081d2;
+					color: #ffffff;
+				}
+				.e9-pill-button.e9-pill-button--blue:hover {
+					background-color: #008dd8;
+				}
+
+
+				.e9-pill-button.e9-pill-button--white {
+					background-color: #ffffff;
+					color: #0081d2;
+				}
+				.e9-pill-button.e9-pill-button--white:hover {
+					background-color: #e2e2e2;
+				}
+
+
+
+
+
+		</style>
+
+
+		<div style="display: flex; flex-direction: row; align-items: flex-start; align-content: space-between; flex-wrap: wrap; justify-content: stretch;">
+
+
+
+		<a href="https://google.com">
+			<div class="e9-flexy-pill-pod e9-flexy-pill-pod--clickable">
+				<div class="e9-flexy-pill-pod-heading e9-flexy-pill-pod-heading--primary">
+					Here's the heading
+				</div>
+
+				<div class="e9-flexy-pill-pod-body">
+					Here's the body
+				</div>
+			</div>
+		</a>
+
+		<a href="https://google.com">
+			<div class="e9-flexy-pill-pod">
+				<div class="e9-flexy-pill-pod-heading e9-flexy-pill-pod-heading--primary">
+					Here's the heading
+				</div>
+
+				<div class="e9-flexy-pill-pod-body">
+					Here's the body
+				</div>
+			</div>
+		</a>
+
+
+
+			<div class="e9-flexy-pill-pod">
+				<div class="e9-flexy-pill-pod-heading e9-flexy-pill-pod-heading--primary">
+					Here's the heading
+				</div>
+
+				<div class="e9-flexy-pill-pod-body">
+					Here's the body
+				</div>
+			</div>
+
+
+
+			<div class="e9-flexy-pill-pod">
+				<div class="e9-flexy-pill-pod-heading e9-flexy-pill-pod-heading--primary">
+					Here's the heading
+				</div>
+
+				<div class="e9-flexy-pill-pod-body">
+					Here's the body
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="e9-notification-strip.e9-notification-strip--plain">
+			<strong>This is a default review, managed by Family Zone - </strong>
+			<a href="javascript:void(0)" onclick="copyArticle(${journalArticleId}, ${parentGroupId}, ${grpId});" class="e9-pill-button e9-pill-button--white">
+				Edit
+			</a>
+
+		</div>
+
+
+			<div class="e9-notification-strip.e9-notification-strip--primary">
+				<strong>This is a modified review, managed by you - </strong>
+				<a href="javascript:void(0)" onclick="deleteElement(${journalArticleId}, ${grpId},${redirectURLafterDelete});" class="e9-pill-button e9-pill-button--blue">
+					Revert
+				</a>
+
+			</div>
+
+
+
+			<!--
+			<div class="e9-flexy-pill-pod">
+				<a href="https://google.com">
+					<div class="e9-flexy-pill-pod-heading e9-flexy-pill-pod-heading--primary">
+						Here's the heading
+					</div>
+
+					<div class="e9-flexy-pill-pod-body">
+						Here's the body
+					</div>
+				</a>
+			</div>
+		-->
+
+
+
+
+
+
+	</body>
+</html>
